@@ -1,0 +1,16 @@
+Inner Classes:
+1. Nested Static Class (eshte nje klase e brendshme e cila eshte e deklaruar gjithmone me fjalen static, mund te aksesohet or insanciohet pa krijuar nje objekt, nuk ka akses tek metodat dhe variablat jostatike te klases se jashtme )
+public class{
+int a;
+string name;
+static class b{
+//klasa b nuk mund ti aksesoje sepse nuk jane statike
+}
+
+2. Non-static Inner Class (eshte  e deklaruar pa static, ka nevoje per te krijuar nje objekt te kalses se jashtme per tu instancuar ose aksesuar
+ky eshte i vetmi rast qe nje klase mund te aksesoje variable private te klases se jashtme)
+
+3. Local Inner Class
+Deklarohet brenda nje metode,ose funksione, dhe aksesohet vetem brenda metodes se deklaruar,nuk mund te aksesohet nga jashte, nuk mund te kete access modifiers: private, protected, public)
+
+4. Anonymous Inner Class ( nuk ka emer dhe krijohet zakonisht per te zevendesuar nje interface ose klase abstrakte)
