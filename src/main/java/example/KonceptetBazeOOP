@@ -1,0 +1,56 @@
+1. Trashegimia eshte nje koncept objective
+
+Single Hierarchy
+A->B
+(konstruktoret nuk trashegohen, perdorim super())
+
+Trashegimi Hierarchi
+A->B
+A->C
+
+Multilevel Hierarchy
+A->B->C
+
+Hierarchy Hibride
+Kombinimi i disa tipeve te trashegimise hierarkike dhe multilevel, quhet hibride.
+
+Diamond Problem Hierarch
+A-B
+A-D
+b-d trashegimia e shumefishte nuk behet e mundur ne Java, por e bejme me ane te interface(implementojme )
+d-c
+Perse duhet te perdorim trashegimine?
+perse duhet te bejme extend?
+Perdorim trashegimi per te riperdorur kodin, per te krijuar nje klase baze dhe te krijojme klasa te tjera qe e zgjerrojne ate.
+
+
+----------
+2. ABASTRAKSIONI I KLASES
+ABSTRACT CLASS
+ABSTRAKSIONI I KLASES, TE FSHEHIM IMPLEMENTIMIN TE PERDORUESI
+Abastraksioni realizohet me asbastract class dhe interface
+Abstract class vs. interface
+Abstract class: Deklarohet me keyword abstract, perdor vetem metoda abstract pa implementim dhe implementim
+Abstraksioni perdoret dhe arrihet 100% ne abstract class vetem me interface
+Interface: Deklarohet me keyword interface, nuk ka implementim, vetem deklarata, dhe nuk mund te kete variabla, por mund te kete konstante
+Interface perdoret si kontrate, dhe i perdor tek te gjitha klasat e tjera
+-----------------
+3. Polimorfizmi
+Poli -for ( nje objekt merr shume forma)
+Overloading Methods vs. Overriding Methods
+Overloading Methods: Lidhet me polimorfizmin, metoda me te njejtin emer, por me parametra te ndryshme, dhe mund te kete implementim te ndryshme
+overloading methods: futet koncepti i polimorfizmit, qe nje objekt merr forma te ndryshme
+
+Overriding Methods: Lidhet me polimorfizmin, metoda me te njejtin emer, por ne klasa te ndryshme, dhe mund te kete implementim te ndryshme
+Emertimi i njejte, por implementim i ndryshme
+Metoda toString() ne Object, e cila e kthen objektin ne string, dhe mund te bejme override ne klasa te tjera
+Overriding lidhet me konceptin e abastraksionit
+Overloading(metoda me emer te njejte, me paramera te ndryshem)
+Overriding(metoda me emer te njejte, parametra te njejte, por body te ndryshem)
+
+
+_------
+4.Encapsulation
+Enkapsulimi i te dhenave, fshehja e implementimit, dhe ekspozimi i vetem i asaj qe duhet te shikohet nga perdoruesi
+Arrihet duke perdorur keyword private, getters dhe setters
+
