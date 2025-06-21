@@ -56,4 +56,10 @@ public class BookRepository {
         throw new NoBookFoundException("Ky liber me title "+title+" nuk ekziston.");
     }
 
+    //Metoda per te afishuar te gjitha librat
+    public List<Book> getBooks(){
+        return books;
+    }
+
+
 }
