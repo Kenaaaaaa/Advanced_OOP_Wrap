@@ -1,0 +1,15 @@
+Collections(Interface)
+Tre interface qe implementohen nga Collection:
+1. List( Interface) ( i do te gjitha me index), funksioni me index, dhe lejon duplikime
+    1. ArrayList klasa
+    2. LinkedList klasa
+2.Set(Interface)( elementet nuk kane index, nuk lejon duplikime), futen ne bashkesi
+    1. HashSet klasa
+    2. LinkedHashSet klasa
+    3. TreeSet
+2.Queue(Interface)( dy menyra per te futur elementet FIFO( rradha ne banke), dhe LIFO(Stiva ne libra)
+    1. PriorityQueue
+    2. Deque(Interface)
+        1. ArrayDeque
+        2. LinkedList
+
