@@ -12,18 +12,55 @@ be dened as  petrol*/
 
 
     private String make;
-    private String make;
+    private String type;
 
-    public Car(String make, String make1) {
+    public Car(String type, String make) {
+        this.type = type;
         this.make = make;
-        this.make = make1;
     }
 
     public String getMake() {
         return make;
     }
 
+    public String getType() {
+        return type;
+    }
+
     public void setMake(String make) {
         this.make = make;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "make='" + make + '\'' +
+                ", type='" + type + '\'' +
+                '}';
+    }
+
+    //Klasa jo statike Engine
+    public class Engine{
+
+        private String engineType;
+
+        //metoda per te percaktuar tipin e motorit duke u bazuar ne tipin e makines
+        public void setEngineType(String engineType) {
+            switch (type.toLowerCase()){
+                case "economy":
+                    this.engineType = engineType;
+                    break;
+                case "luxury":
+                    this.engineType = "Luxury";
+                    break;
+                default:
+                    this.engineType="Petrol";
+            }
+
+        }
     }
 }
