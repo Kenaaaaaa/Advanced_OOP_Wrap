@@ -12,8 +12,14 @@ if the given email address does not meet the email criteria, set the value to
 unknown  (use regular expressions*/
 public class UserValidator {
 
-    public static void validateEmail(String email,String alternativeEmail) {
+    public static void validateEmail(String primaryEmail,String alternativeEmail) {
+        Email email =new Email();
 
+        //valido primary email
+       String validatePrimaryEmail1= email.validate(primaryEmail);
+        System.out.println(validatePrimaryEmail1);
+
+        String validateAlternativeEmail=email.validate(alternativeEmail);
     }
 
     //INNER CLASS
