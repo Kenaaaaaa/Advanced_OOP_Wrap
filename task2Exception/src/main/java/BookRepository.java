@@ -57,7 +57,7 @@ public class BookRepository {
     }
 
     //Metoda per te afishuar te gjitha librat
-    public List<Book> getBooks(){
+    public List<Book> getAllBooks(){
         return books;
     }
 
