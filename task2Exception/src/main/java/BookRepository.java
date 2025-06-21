@@ -45,7 +45,15 @@ public class BookRepository {
         }
             throw new NoBookFoundException("Ky liber me id "+id+" nuk ekziston.");
 
-
+    }
+    //Metoda per te gjetur librin sipas emrit
+    public Book findBookByTitle(String title) throws NoBookFoundException{
+        for(Book book:books){
+            if(book.getTitle().equals(title)){
+                return book;
+            }
+        }
+        throw new NoBookFoundException("Ky liber me title "+title+" nuk ekziston.");
     }
 
 }
