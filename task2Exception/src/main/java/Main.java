@@ -12,6 +12,29 @@ public class Main {
         //afishimi
         System.out.println("Keto jane te gjitha librat");
         bookRepository.getAllBooks().forEach(System.out::print);
+
+        try{
+            //Gjej librin sipas emrit
+            System.out.println("Search for 'Title1");
+            System.out.println(bookRepository.findBookByTitle("titulli1"));
+
+            //Heqja e nje libri sipas id
+            System.out.println("Hiq librin me id2");
+            bookRepository.removeBookById(2);
+            bookRepository.getAllBooks().forEach(System.out::println);
+
+            //Gjej nje liber qe nuk ekziston
+            System.out.println("Search for title 4");
+            System.out.println(bookRepository.findBookByTitle("titulli4"));
+
+        }
+        catch(NoBookFoundException e){
+            System.out.println("Error"+e.getMessage());
+        }
+
+
     }
+
+
 
 }
