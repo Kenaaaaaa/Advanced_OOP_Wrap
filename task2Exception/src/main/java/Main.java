@@ -6,5 +6,8 @@ public class Main {
 
         //shtimin e librave
         bookRepository.addBook(new Book(1,"titulli1","author1",1999));
+        bookRepository.addBook(new Book(2,"titulli2","author2",2000));
+        bookRepository.addBook(new Book(3,"titulli3","author3",1999));
     }
+
 }
