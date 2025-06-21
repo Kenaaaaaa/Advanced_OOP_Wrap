@@ -43,4 +43,9 @@ public class UserValidator {
             return email.trim().toLowerCase();
         }
     }
+
+    public static void main(String[] args) {
+        validateEmail("kena@example.com","kena-email");
+        validateEmail(null," ");
+    }
 }
